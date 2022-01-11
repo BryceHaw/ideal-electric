@@ -7646,6 +7646,7 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+  color: #FFF;
 }
 
 .lh-1 {
@@ -11509,10 +11510,46 @@ html {
 .copyright {
   background-color: #FF4202;
 }
+#contact-message-portfolio{
+  color: #FFF;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .fa-lightbulb{
   color: yellow;
 }
+
 .itemLists{
   text-align: left;
   color: white;
+  display: block;
+  justify-content: center;
+}
+.itemLists li{
+  font-size: 24px;
+}
+
+.portfolio-content{
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.img-portfolio-small{
+  max-width: 50%;
+  height: auto;
+}
+.btn-close-2{
+  background-color: #FF4202;
+  border-color: #FF4202;
+  border-radius: 5px;
+  color: #FFF;
+  transform: scale(1.3);
+  margin-top: 1rem;
+}
+#mission-statement{
+  color: #FFF;
+  font-size: 36px;
+  line-height: 1.3;
 }
