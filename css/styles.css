@@ -11553,3 +11553,10 @@ html {
   font-size: 36px;
   line-height: 1.3;
 }
+#contactForm{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+#contactMessage{
+  height: 10rem;
+}
