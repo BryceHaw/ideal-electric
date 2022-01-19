@@ -31,15 +31,36 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
+    var reviewDropDown = document.querySelector(".reviewDropDown");
+
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            if(reviewDropDown.style.display == "block"){
+                
+            }
+            else if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
         });
     });
 
 });
+
+//open the reviews dropdown menu
+function reviewDropDown(){
+    var dropDown = document.querySelector(".reviewDropDown");
+    var icon = document.querySelector(".fa-caret-up");
+    
+    if(dropDown.style.display == "none"){
+        dropDown.style.display = "block";
+        icon.style.transform = "rotate(180deg)";
+        icon.style.transition = "all .5s ease-in-out";
+    }else{
+        dropDown.style.display = "none";
+        icon.style.transform = "rotate(180deg)";
+        icon.style.transition = "all .5s ease-in-out";
+    }
+}

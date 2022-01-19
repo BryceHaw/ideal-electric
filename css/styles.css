@@ -70,6 +70,15 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -11558,4 +11567,53 @@ html {
 }
 #contactMessage{
   height: 10rem;
+}
+.reviewNav{
+  cursor: pointer;
+}
+.reviewDropDown > li > a > .fa-google{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #FF4202;
+  color: #FFF;
+  padding: 1px;
+  margin-right: 10px;
+}
+.reviewDropDown > li > a > .fa-facebook-f{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #FF4202;
+  color: white;
+  padding: 1px;
+  margin-right: 10px;
+}
+.reviewDropDown{
+  color: #FFF;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #3B3A3A;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: none;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  transition: all 5.5s ease-in-out;
+}
+.reviewDropDown li{
+  padding: 5px;
+  padding-left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.reviewDropDown > li > a{
+  color: #FFF;
+  text-decoration: none;
+}
+.reviewDropDown > li > a:hover{
+  color: #FF4202;
+}
+.reviewDropDown li:hover{
+  transition: all 0.2s ease-in-out;
 }
