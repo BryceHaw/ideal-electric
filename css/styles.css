@@ -11598,9 +11598,9 @@ html {
   margin-bottom: 0;
   list-style: none;
   display: none;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-  transition: all 5.5s ease-in-out;
+}
+.reviewDropDown.active{
+  display: block;
 }
 .reviewDropDown li{
   padding: 5px;

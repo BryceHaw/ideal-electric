@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', event => {
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
-            if(reviewDropDown.style.display == "block"){
+            if(document.querySelector(".reviewDropDown.active")){
                 
             }
             else if (window.getComputedStyle(navbarToggler).display !== 'none') {
@@ -49,18 +49,16 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-//open the reviews dropdown menu
 function reviewDropDown(){
-    var dropDown = document.querySelector(".reviewDropDown");
-    var icon = document.querySelector(".fa-caret-up");
-    
-    if(dropDown.style.display == "none"){
-        dropDown.style.display = "block";
-        icon.style.transform = "rotate(180deg)";
-        icon.style.transition = "all .5s ease-in-out";
+    RDP.classList.toggle("active")
+    var icon = RN.querySelector('svg');
+
+    if(icon.classList.contains("fa-caret-up")){
+        icon.classList.remove("fa-caret-up");
+        icon.classList.add("fa-caret-down");
     }else{
-        dropDown.style.display = "none";
-        icon.style.transform = "rotate(180deg)";
-        icon.style.transition = "all .5s ease-in-out";
+        icon.classList.remove("fa-caret-down");
+        icon.classList.add("fa-caret-up");
     }
 }
+var RN = document.querySelector(".reviewNav"), RDP = document.querySelector(".reviewDropDown");
