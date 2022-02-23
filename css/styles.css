@@ -11468,7 +11468,7 @@ html {
     font-size: 1.5rem;
   }
 }
-.portfolio .portfolio-item {
+.service .service-item {
   cursor: pointer;
   position: relative;
   display: block;
@@ -11476,7 +11476,7 @@ html {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.portfolio .portfolio-item .portfolio-item-caption {
+.service .service-item .service-item-caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -11485,25 +11485,25 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+.service .service-item .service-item-caption:hover {
   transform: scale(1.2);
 }
 
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+.service .service-item .service-item-caption .service-item-caption-content {
   font-size: 1.5rem;
 }
 
-.portfolio-modal .btn-close {
+.service-modal .btn-close {
   color: #FF4202;
   font-size: 2rem;
   padding: 1rem;
 }
-.portfolio-modal .portfolio-modal-title {
+.service-modal .service-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
+  .service-modal .service-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
@@ -11519,7 +11519,7 @@ html {
 .copyright {
   background-color: #FF4202;
 }
-#contact-message-portfolio{
+#contact-message-service{
   color: #FFF;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -11538,14 +11538,14 @@ html {
   font-size: 24px;
 }
 
-.portfolio-content{
+.service-content{
   justify-content: center;
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.img-portfolio-small{
+.img-service-small{
   max-width: 50%;
   height: auto;
 }
@@ -11576,7 +11576,7 @@ html {
   border-style: solid;
   border-color: #FF4202;
   color: #FFF;
-  padding: 1px;
+  padding: 2px;
   margin-right: 10px;
 }
 .reviewDropDown > li > a > .fa-facebook-f{
@@ -11584,7 +11584,7 @@ html {
   border-style: solid;
   border-color: #FF4202;
   color: white;
-  padding: 1px;
+  padding: 2px;
   margin-right: 10px;
 }
 .reviewDropDown{
